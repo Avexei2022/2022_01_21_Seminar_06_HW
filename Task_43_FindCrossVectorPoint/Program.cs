@@ -4,16 +4,16 @@
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
 Console.Clear();
-PrdoubleTask();
+PrintTask();
 double b1 = InputValue("b1");
 double k1 = InputValue("k1");
 double b2 = InputValue("b2");
 double k2 = InputValue("k2");
 double x = GetX(b1, k1, b2, k2);
 double y = GetY(b1, k1, x);
-PrdoubleResult(b1, k1, b2, k2, x, y);
+PrintResult(b1, k1, b2, k2, x, y);
 
-void PrdoubleTask() {
+void PrintTask() {
     Console.WriteLine("Программа находит точку пересечения двух прямых,\n" +
     "заданных уравнениями y = k1 * x + b1, y = k2 * x + b2.\n"+
     "Значения b1, k1, b2 и k2 задаются пользователем.\n");
@@ -35,7 +35,7 @@ double GetY(double b1, double k1, double x) {
     return y;
 }
 
-void PrdoubleResult(double b1, double k1, double b2, double k2, double x, double y) {
+void PrintResult(double b1, double k1, double b2, double k2, double x, double y) {
     Console.WriteLine();
     Console.WriteLine($"b1 = {b1}, k1 = {k1}, b2 = {b2}, k2 = {k2} -> ({x:N1}; {y:N1})\n");
 }
